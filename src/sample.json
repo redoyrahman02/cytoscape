@@ -1,0 +1,255 @@
+{
+    "data": [],
+    "directed": true,
+    "multigraph": false,
+    "elements": {
+      "nodes": [
+        {
+          "data": {
+            "id": "lambda-sample-shoppingcart-service/Prod",
+            "value": "lambda-sample-shoppingcart-service/Prod",
+            "name": "lambda-sample-shoppingcart-service/Prod"
+          }
+        },
+        {
+          "data": {
+            "id": "GetProducts",
+            "value": "GetProducts",
+            "name": "GetProducts"
+          }
+        },
+        {
+          "data": {
+            "id": "lambda-sample-product-mock/Prod",
+            "value": "lambda-sample-product-mock/Prod",
+            "name": "lambda-sample-product-mock/Prod"
+          }
+        },
+        {
+          "data": {
+            "id": "AddToCart",
+            "value": "AddToCart",
+            "name": "AddToCart"
+          }
+        },
+        {
+          "data": {
+            "id": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI",
+            "value": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI",
+            "name": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI"
+          }
+        },
+        {
+          "data": {
+            "id": "GetProduct",
+            "value": "GetProduct",
+            "name": "GetProduct"
+          }
+        },
+        {
+          "data": {
+            "id": "CheckoutCart",
+            "value": "CheckoutCart",
+            "name": "CheckoutCart"
+          }
+        },
+        {
+          "data": {
+            "id": "DynamoDB",
+            "value": "DynamoDB",
+            "name": "DynamoDB"
+          }
+        },
+        {
+          "data": {
+            "id": "CartDBStream:live",
+            "value": "CartDBStream:live",
+            "name": "CartDBStream:live"
+          }
+        },
+        {
+          "data": {
+            "id": "CartDBStream",
+            "value": "CartDBStream",
+            "name": "CartDBStream"
+          }
+        },
+        {
+          "data": {
+            "id": "ListCart",
+            "value": "ListCart",
+            "name": "ListCart"
+          }
+        },
+        {
+          "data": {
+            "id": "cognito-idp.us-east-2.amazonaws.com",
+            "value": "cognito-idp.us-east-2.amazonaws.com",
+            "name": "cognito-idp.us-east-2.amazonaws.com"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "data": {
+            "weight": 1659,
+            "source": "lambda-sample-shoppingcart-service/Prod",
+            "target": "lambda-sample-shoppingcart-service/Prod", 
+            "color": "#9dbaea"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "lambda-sample-shoppingcart-service/Prod",
+            "target": "AddToCart",
+            "color": "#9dbaea"
+          }
+        },
+        {
+          "data": {
+            "weight": 152,
+            "source": "lambda-sample-shoppingcart-service/Prod",
+            "target": "CheckoutCart",
+            "color": "#9dbaea"
+          }
+        },
+        {
+          "data": {
+            "weight": 75,
+            "source": "lambda-sample-shoppingcart-service/Prod",
+            "target": "ListCart",
+            "color": "#9dbaea"
+          }
+        },
+        {
+          "data": {
+            "weight": 217,
+            "source": "GetProducts",
+            "target": "GetProducts",
+            "color": "#9dbaea"
+          }
+        },
+        {
+          "data": {
+            "weight": 435,
+            "source": "lambda-sample-product-mock/Prod",
+            "target": "lambda-sample-product-mock/Prod",
+            "color": "red"
+          }
+        },
+        {
+          "data": {
+            "weight": 217,
+            "source": "lambda-sample-product-mock/Prod",
+            "target": "GetProducts"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "lambda-sample-product-mock/Prod",
+            "target": "GetProduct"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "AddToCart",
+            "target": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "AddToCart",
+            "target": "lambda-sample-product-mock/Prod"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "AddToCart",
+            "target": "AddToCart"
+          }
+        },
+        {
+          "data": {
+            "weight": 10,
+            "source": "AddToCart",
+            "target": "cognito-idp.us-east-2.amazonaws.com"
+          }
+        },
+        {
+          "data": {
+            "weight": 758,
+            "source": "GetProduct",
+            "target": "GetProduct"
+          }
+        },
+        {
+          "data": {
+            "weight": 152,
+            "source": "CheckoutCart",
+            "target": "CheckoutCart"
+          }
+        },
+        {
+          "data": {
+            "weight": 152,
+            "source": "CheckoutCart",
+            "target": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI"
+          }
+        },
+        {
+          "data": {
+            "weight": 152,
+            "source": "CheckoutCart",
+            "target": "DynamoDB"
+          }
+        },
+        {
+          "data": {
+            "weight": 59,
+            "source": "CartDBStream:live",
+            "target": "CartDBStream:live"
+          }
+        },
+        {
+          "data": {
+            "weight": 59,
+            "source": "CartDBStream:live",
+            "target": "CartDBStream"
+          }
+        },
+        {
+          "data": {
+            "weight": 51,
+            "source": "CartDBStream",
+            "target": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI"
+          }
+        },
+        {
+          "data": {
+            "weight": 75,
+            "source": "ListCart",
+            "target": "ListCart"
+          }
+        },
+        {
+          "data": {
+            "weight": 41,
+            "source": "ListCart",
+            "target": "lambda-sample-shoppingcart-service-DynamoDBShoppingCartTable-JPWJBJ5ZTYBI"
+          }
+        },
+        {
+          "data": {
+            "weight": 7,
+            "source": "ListCart",
+            "target": "cognito-idp.us-east-2.amazonaws.com"
+          }
+        }
+      ]
+    }
+  }
